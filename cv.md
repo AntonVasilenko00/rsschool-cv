@@ -16,7 +16,6 @@ I am a self-motivated person, with a great passion of studying web technologies.
 * BEM methodology, SASS,
 * Photoshop, Figma,
 * C++, Python
-* English
 
 ## Works
 
@@ -26,6 +25,7 @@ I am a self-motivated person, with a great passion of studying web technologies.
   * Practiced: *BEM Naming*, *Flexbox*, *Responsiveness*, *SASS*
 * [Creative-Digital-Agencies landing](https://antonvasilenko00.github.io/Creative-Digital-Agencies/)
   * Practiced: *HTML5*, *CSS3*
+  
 ## Education
 2019-2023 Belarusian State University Of Informatics and
 Radioelectronics (BSUIR).
