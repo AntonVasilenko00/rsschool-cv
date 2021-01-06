@@ -29,9 +29,12 @@ function animate(className,addClassName) {
     init();
     checkPosition();
 };
-//deactivate save scroll on update
-$(window).on('beforeunload', function() {
-  $(window).scrollTop(0);
-});
 animate("aside__section","aside__section--loaded");
 animate("main__section","main__section--loaded");
+
+//deactivate save scroll on update
+$(document).ready(function(){
+  setTimeout(function(){
+      window.scrollTo(0, 0);
+  }, 1);
+});
