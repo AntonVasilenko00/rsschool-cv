@@ -7,14 +7,14 @@
 		<title>Anton Vasilenko CV</title>
 	</head>
 	<body>
-		<main class="main">
+		<div class="container">
 			<aside class="aside">
 				<img class="avatar" src="dist/img/profile-pic.jpg" alt="avatar" />
-				<section class="intro aside-section">
+				<section class="intro aside__section">
 					<h1 class="intro__name title">Vasilenko Anton</h1>
 					<p class="intro__position">Web Developer</p>
 				</section>
-				<section class="info aside-section">
+				<section class="info aside__section">
 					<h1 class="info__title title">Info</h1>
 					<ul class="info__links">
 						<li class="info__item">
@@ -31,7 +31,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="skills aside-section">
+				<section class="skills aside__section">
 					<h1 class="skills__title title">Skills</h1>
 					<ul class="skills__list">
 						<li class="skills__item">
@@ -102,7 +102,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="social aside-section">
+				<section class="social aside__section">
 					<h1 class="social__title title">Social</h1>
 					<ul class="social__links">
 						<li class="social__item">
@@ -122,8 +122,62 @@
 					</ul>
 				</section>
 			</aside>
-			<section class="main-section"></section>
-		</main>
+			<main class="main">
+				<article class="about main__section">
+					<h1 class="about__title title">About me</h1>
+					<p class="about__text">
+						I am a self-motivated person, with a great passion of studying web technologies. I am eager to grow and improve my IT
+						and social skills. My current goal is to apply acquired knowledge in practice, working with a team of specialists.
+					</p>
+				</article>
+				<article class="works main__section">
+					<h1 class="works__title title">Works</h1>
+					<section class="work works__item">
+						<h2 class="work__title title">
+							<a href="https://antonvasilenko00.github.io/ADC/" target="_blank">ADC Website Homepage</a>
+						</h2>
+						<h3 class="work__practice">Practiced:</h3>
+						<p class="work__tecnologies">Relative units, Media quires, Simple js sliders, Custom checkboxes, SASS</p>
+					</section>
+					<section class="work works__item">
+						<h2 class="work__title title">
+							<a href="https://antonvasilenko00.github.io/Thrivetalk-landing-page/" target="_blank">Thrivetalk landing</a>
+						</h2>
+						<h3 class="work__practice">Practiced:</h3>
+						<p class="work__tecnologies">BEM Naming, Flexbox, Responsiveness, SASS</p>
+					</section>
+					<section class="work works__item">
+						<h2 class="work__title title">
+							<a href="https://antonvasilenko00.github.io/Creative-Digital-Agencies/" target="_blank"
+								>Creative-Digital-Agencies landing
+							</a>
+						</h2>
+						<h3 class="work__practice">Practiced:</h3>
+						<p class="work__tecnologies">HTML5, CSS3, Flexbox</p>
+					</section>
+				</article>
+				<article class="education main__section">
+					<h1 class="education__title title">Education</h1>
+					<section class="education__item">
+						<h2 class="education__subtitle subtitle">University</h2>
+						<p class="education__text">2019-2023 Belarusian State University Of Informatics and Radioelectronics (BSUIR)</p>
+					</section>
+					<section class="education__item">
+						<h2 class="education__subtitle subtitle">Self-education:</h2>
+						<p class="education__text">
+							Acquired skills by watching Youtube guides, taking FreeCodeCamp courses, and other internet resourses.
+						</p>
+					</section>
+				</article>
+				<article class="english main__section">
+					<p class="english__text">
+						I have been taking courses in Aspect School in Mahilew for 5 years. Have past PET and FCE cambridge exams.
+					</p>
+					<h2 class="english__subtitle subtitle">FCE overal score: 182 (Grade A)</h2>
+					<em class="certificates">certificates are available upon request.</em>
+				</article>
+			</main>
+		</div>
 		<!-- Font Awesome 5 Icons -->
 		<script src="https://kit.fontawesome.com/78cafd53fa.js" crossorigin="anonymous"></script>
 	</body>
