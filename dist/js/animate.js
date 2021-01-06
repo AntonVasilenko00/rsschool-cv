@@ -1,3 +1,4 @@
+$( document ).scrollTop( 0);
 function animate(className,addClassName) {
     var elements;
     var windowHeight;
@@ -18,7 +19,6 @@ function animate(className,addClassName) {
   
         if (positionFromTop - windowHeight <= 0) {
           element.classList.add(addClassName);
-          console.log(addClassName + "  " + positionFromTop + "  " + windowHeight);
         }
       }
     }
@@ -28,6 +28,10 @@ function animate(className,addClassName) {
   
     init();
     checkPosition();
-  };
+};
+//deactivate save scroll on update
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
 animate("aside__section","aside__section--loaded");
 animate("main__section","main__section--loaded");
