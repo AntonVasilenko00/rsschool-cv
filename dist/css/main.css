@@ -1,16 +1,278 @@
+/* Change orientaion breakpoint - 709px */
+
+/* Variables */
+:root {
+	--primary-clr: #3498db;
+	--black-clr: #2c3e50;
+	--white-clr: #fdfffc;
+	--gray-bg-clr: #e0e4e5;
+}
+/* Base styling */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 0.05em;
+	background: var(--gray-bg-clr);
 }
 ul {
 	list-style: none;
 }
 a {
 	text-decoration: none;
+	color: inherit;
 }
 img {
-	max-width: 300px;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
+}
+
+/* Classes */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+
+	box-shadow: 0px 4px 15px rgba(44, 62, 80, 0.25);
+}
+
+.title {
+	padding: 32px 0 16px 0;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--primary-clr);
+}
+.title--aside {
+	padding: 16px 0;
+	color: var(--white-clr);
+}
+
+.subtitle {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+h4 {
+	font-weight: 500;
+}
+
+mark {
+	font-weight: 600;
+	font-style: italic;
+
+	background-color: inherit;
+}
+
+.certificates {
+	font-weight: 500;
+}
+
+/* Blocks */
+
+/* Main & Aside Wrappers*/
+.aside {
+	flex: 1 1 37.5%;
+
+	font-size: 14px;
+	color: var(--white-clr);
+
+	background-color: var(--primary-clr);
+}
+.aside__container {
+	padding: 0 14px;
+}
+
+/* Main */
+.main {
+	flex: 1 1 62.5%;
+	padding: 0 14px;
+
+	font-size: 16px;
+	color: var(--black-clr);
+
+	background-color: var(--white-clr);
+}
+
+@media (min-width: 715px) {
+	.main {
+		padding-right: 60px;
+	}
+}
+.main__section {
+	position: relative;
+	padding-bottom: 24px;
+
+	opacity: 0;
+	transform: translateX(70%);
+	transition: opacity 1.5s, transform 1s;
+}
+
+.main__section--loaded {
+	opacity: 1;
+	transform: translateX(0);
+}
+.aside__section {
+	position: relative;
+	padding-bottom: 24px;
+
+	opacity: 0;
+	transform: translateX(-70%);
+	transition: opacity 1.5s, transform 1s;
+}
+
+.aside__section--loaded {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Spacing nested elements */
+.main__section > * {
+	padding-bottom: 16px;
+}
+.main__section > *:last-child {
+	padding-bottom: 0;
+}
+/* Spacing double-nested elements */
+.main__section > * > * {
+	padding-bottom: 8px;
+}
+.main__section > * > *:last-child {
+	padding-bottom: 0;
+}
+
+.aside__section > * {
+	padding-bottom: 16px;
+}
+.aside__section > *:last-child {
+	padding-bottom: 0;
+}
+/* Spacing double-nested elements */
+.aside__section > * > * {
+	padding-bottom: 16px;
+}
+.aside__section > * > *:last-child {
+	padding-bottom: 0;
+}
+
+/* Visual Dividers */
+.main__section::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 65%;
+	height: 2px;
+
+	background-color: var(--primary-clr);
+}
+.aside__section::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 2px;
+
+	background-color: var(--white-clr);
+}
+/* Turn off Visual Dividers for last elements */
+.aside__section:last-child::after,
+.main__section:last-child::after {
+	display: none;
+}
+
+/* Aside */
+.avatar {
+	width: 100%;
+	height: 90vw;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center 39%;
+	object-position: center 39%;
+}
+
+@media (min-width: 709px) {
+	.avatar {
+		height: auto;
+		max-height: 255px;
+	}
+}
+
+/* Shorten Visual Divider At the Top */
+.intro::after {
+	width: 60%;
+}
+
+.intro__name {
+	padding: 24px 0 8px 0;
+}
+
+@media (min-width: 426px) and (max-width: 709px) {
+	.main {
+		padding: 0 15vw;
+	}
+	.aside__container {
+		padding: 0 15vw;
+	}
+	.main__section::after,
+	.aside__section::after {
+		width: 100%;
+	}
+
+	.intro {
+		position: absolute;
+		width: 100%;
+		top: calc(90vw - 3.3em - 70px);
+		left: 0;
+		padding: 30px;
+
+		border-radius: 10px 10px 0 0;
+		background: rgba(44, 62, 80, 0.42);
+		backdrop-filter: blur(10px);
+	}
+	.intro::after {
+		display: none;
+	}
+	.intro__name {
+		padding: 0;
+	}
+	.intro__position {
+		margin-top: 10px;
+		padding: 0;
+	}
+}
+.skills__item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.jquery-icon {
+	transform: scale(0.62);
+}
+
+.social__link {
+	display: inline-block;
+	margin-left: 8px;
+}
+@media (min-width: 709px) and (max-width: 793px) {
+	.social__link {
+		margin-left: 1px;
+	}
+}
+
+/* Main */
+
+/* Work */
+.work__practice {
+	font-size: 16px;
+	font-weight: 500;
+}
+.work__tecnologies {
+	font-weight: 300;
+	font-style: italic;
 }

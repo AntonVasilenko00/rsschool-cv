@@ -3,182 +3,208 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Main css -->
 		<link rel="stylesheet" href="dist/css/main.css" />
+
 		<title>Anton Vasilenko CV</title>
 	</head>
 	<body>
 		<div class="container">
 			<aside class="aside">
-				<img class="avatar" src="dist/img/profile-pic.jpg" alt="avatar" />
-				<section class="intro aside__section">
-					<h1 class="intro__name title">Vasilenko Anton</h1>
-					<p class="intro__position">Web Developer</p>
-				</section>
-				<section class="info aside__section">
-					<h1 class="info__title title">Info</h1>
-					<ul class="info__links">
-						<li class="info__item">
-							<i class="info__icon fas fa-phone-alt"></i>
-							<a class="info__phone" href="tel:+375 29 5420003">+375 29 5420003</a>
-						</li>
-						<li class="info__item">
-							<i class="info__icon fas fa-map-marked-alt"></i>
-							<a class="info__location" href="https://www.google.com/maps?q=Minsk+Yakuba+Kolasa+28">Minsk, Yakuba Kolasa, 28</a>
-						</li>
-						<li class="info__item">
-							<i class="info__icon fas fa-envelope"></i>
-							<a class="info__mail" href="mailto: anton.vasilenko00@gmail.com" class="info__mail">anton.vasilenko00@gmail.com</a>
-						</li>
-					</ul>
-				</section>
-				<section class="skills aside__section">
-					<h1 class="skills__title title">Skills</h1>
-					<ul class="skills__list">
-						<li class="skills__item">
-							<i class="skills__icon fab fa-html5"></i>
-							<p class="skills__skill-name">HTML5</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-						<li class="skills__item">
-							<i class="skills__icon fab fa-css3-alt"></i>
-							<p class="skills__skill-name">CSS3</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-						<li class="skills__item">
-							<i class="skills__icon fab fa-sass"></i>
-							<p class="skills__skill-name">SASS</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-						<li class="skills__item">
-							<i class="skills__icon fab fa-git-alt"></i>
-							<p class="skills__skill-name">git</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-						<li class="skills__item">
-							<i class="skills__icon fab fa-js-square"></i>
-							<p class="skills__skill-name">JS</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-						<li class="skills__item">
-							<img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" />
-							<p class="skills__skill-name">JQUERY</p>
-							<div class="stars">
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-								<i class="star"></i>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section class="social aside__section">
-					<h1 class="social__title title">Social</h1>
-					<ul class="social__links">
-						<li class="social__item">
-							<i class="fab fa-github"></i
-							><a href="https://github.com/AntonVasilenko00" class="social__link">github.com/AntonVasilenko00</a>
-						</li>
-						<li class="social__item">
-							<i class="fab fa-linkedin"></i
-							><a href="https://www.linkedin.com/in/anton-vasilenko/" class="social__link">linkedin.com/in/anton-vasilenko</a>
-						</li>
-						<li class="social__item">
-							<i class="fab fa-vk"></i><a href="https://vk.com/anton.vasilenko" class="social__link">vk.com/anton.vasilenko</a>
-						</li>
-						<li class="social__item">
-							<i class="fab fa-telegram"></i><a href="https://t.me/anton_vasilenko" class="social__link">t.me/anton_vasilenko</a>
-						</li>
-					</ul>
-				</section>
+				<picture class="avatar-container">
+					<img class="avatar" src="dist/img/avatar.jpg" alt="avatar" />
+				</picture>
+				<div class="aside__container">
+					<section class="intro intro--sticked aside__section">
+						<h2 class="intro__name title title--aside">Vasilenko Anton</h2>
+						<p class="intro__position">Web Developer</p>
+					</section>
+					<section class="info aside__section">
+						<h2 class="info__title title title--aside">Info</h2>
+						<ul class="info__links">
+							<li class="info__item">
+								<i class="info__icon fas fa-phone-alt"></i>
+								<a class="info__phone" href="tel:+375295420003">+375 29 5420003</a>
+							</li>
+							<li class="info__item">
+								<i class="info__icon fas fa-map-marked-alt"></i>
+								<a class="info__location" href="https://www.google.com/maps?q=Minsk+Yakuba+Kolasa+28" target="_blank"
+									>Minsk, Yakuba Kolasa, 28</a
+								>
+							</li>
+							<li class="info__item">
+								<i class="info__icon fas fa-envelope"></i>
+								<a class="info__mail" href="mailto:anton.vasilenko00@gmail.com">anton.vasilenko00@gmail.com</a>
+							</li>
+						</ul>
+					</section>
+					<section class="skills aside__section">
+						<h2 class="skills__title title title--aside">Skills</h2>
+						<ul class="skills__list">
+							<li class="skills__item">
+								<i class="skills__icon fab fa-html5"></i>
+								<p class="skills__skill-name">HTML5</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star-half-alt"></i>
+								</div>
+							</li>
+							<li class="skills__item">
+								<i class="skills__icon fab fa-css3-alt"></i>
+								<p class="skills__skill-name">CSS3</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star far fa-star"></i>
+								</div>
+							</li>
+							<li class="skills__item">
+								<i class="skills__icon fab fa-sass"></i>
+								<p class="skills__skill-name">SASS</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star far fa-star"></i>
+								</div>
+							</li>
+							<li class="skills__item">
+								<i class="skills__icon fab fa-git-alt"></i>
+								<p class="skills__skill-name">git</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star far fa-star"></i>
+									<i class="star far fa-star"></i>
+								</div>
+							</li>
+							<li class="skills__item">
+								<i class="skills__icon fab fa-js-square"></i>
+								<p class="skills__skill-name">JS</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star-half-alt"></i>
+									<i class="star far fa-star"></i>
+									<i class="star far fa-star"></i>
+								</div>
+							</li>
+							<li class="skills__item">
+								<img class="jquery-icon" src="dist/img/jquery-icon.svg" alt="JQ" />
+								<p class="skills__skill-name">JQUERY</p>
+								<div class="stars">
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star"></i>
+									<i class="star fas fa-star-half-alt"></i>
+									<i class="star far fa-star"></i>
+									<i class="star far fa-star"></i>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="social aside__section">
+						<h2 class="social__title title title--aside">Social</h2>
+						<ul class="social__links">
+							<li class="social__item">
+								<i class="fab fa-github"></i
+								><a class="social__link" href="https://github.com/AntonVasilenko00" target="_blank"
+									>github.com/AntonVasilenko00</a
+								>
+							</li>
+							<li class="social__item">
+								<i class="fab fa-linkedin"></i
+								><a class="social__link" href="https://www.linkedin.com/in/anton-vasilenko/" target="_blank"
+									>linkedin.com/in/anton-vasilenko</a
+								>
+							</li>
+							<li class="social__item">
+								<i class="fab fa-vk"></i
+								><a class="social__link" href="https://vk.com/anton.vasilenko" target="_blank">vk.com/anton.vasilenko</a>
+							</li>
+							<li class="social__item">
+								<i class="fab fa-telegram-plane"></i
+								><a class="social__link" href="https://t.me/anton_vasilenko" target="_blank">t.me/anton_vasilenko</a>
+							</li>
+						</ul>
+					</section>
+				</div>
 			</aside>
 			<main class="main">
-				<article class="about main__section">
-					<h1 class="about__title title">About me</h1>
+				<section class="about main__section">
+					<h2 class="about__title title">About me</h2>
 					<p class="about__text">
 						I am a self-motivated person, with a great passion of studying web technologies. I am eager to grow and improve my IT
 						and social skills. My current goal is to apply acquired knowledge in practice, working with a team of specialists.
 					</p>
-				</article>
-				<article class="works main__section">
-					<h1 class="works__title title">Works</h1>
+				</section>
+				<section class="works main__section">
+					<h2 class="works__title title">Works</h2>
 					<section class="work works__item">
-						<h2 class="work__title title">
+						<h3 class="work__title subtitle">
 							<a href="https://antonvasilenko00.github.io/ADC/" target="_blank">ADC Website Homepage</a>
-						</h2>
-						<h3 class="work__practice">Practiced:</h3>
+						</h3>
+						<h4 class="work__practice">Practiced:</h4>
 						<p class="work__tecnologies">Relative units, Media quires, Simple js sliders, Custom checkboxes, SASS</p>
 					</section>
 					<section class="work works__item">
-						<h2 class="work__title title">
+						<h3 class="work__title subtitle">
 							<a href="https://antonvasilenko00.github.io/Thrivetalk-landing-page/" target="_blank">Thrivetalk landing</a>
-						</h2>
-						<h3 class="work__practice">Practiced:</h3>
+						</h3>
+						<h4 class="work__practice">Practiced:</h4>
 						<p class="work__tecnologies">BEM Naming, Flexbox, Responsiveness, SASS</p>
 					</section>
 					<section class="work works__item">
-						<h2 class="work__title title">
+						<h3 class="work__title subtitle">
 							<a href="https://antonvasilenko00.github.io/Creative-Digital-Agencies/" target="_blank"
 								>Creative-Digital-Agencies landing
 							</a>
-						</h2>
-						<h3 class="work__practice">Practiced:</h3>
+						</h3>
+						<h4 class="work__practice">Practiced:</h4>
 						<p class="work__tecnologies">HTML5, CSS3, Flexbox</p>
 					</section>
-				</article>
-				<article class="education main__section">
-					<h1 class="education__title title">Education</h1>
+				</section>
+				<section class="education main__section">
+					<h2 class="education__title title">Education</h2>
 					<section class="education__item">
-						<h2 class="education__subtitle subtitle">University</h2>
+						<h3 class="education__subtitle subtitle">University</h3>
 						<p class="education__text">2019-2023 Belarusian State University Of Informatics and Radioelectronics (BSUIR)</p>
 					</section>
 					<section class="education__item">
-						<h2 class="education__subtitle subtitle">Self-education:</h2>
+						<h3 class="education__subtitle subtitle">Self-education:</h3>
 						<p class="education__text">
-							Acquired skills by watching Youtube guides, taking FreeCodeCamp courses, and other internet resourses.
+							Acquired skills by watching Youtube guides, taking FreeCodeCamp courses, and using such resourses as Google, Stack
+							Overflow, etc.
 						</p>
 					</section>
-				</article>
-				<article class="english main__section">
+				</section>
+				<section class="english main__section">
+					<h2 class="english__title title">English</h2>
 					<p class="english__text">
 						I have been taking courses in Aspect School in Mahilew for 5 years. Have past PET and FCE cambridge exams.
 					</p>
-					<h2 class="english__subtitle subtitle">FCE overal score: 182 (Grade A)</h2>
-					<em class="certificates">certificates are available upon request.</em>
-				</article>
+					<p><mark class="english__score">FCE overal score: 182 (Grade A)</mark></p>
+					<p><em class="certificates">certificates are available upon request.</em></p>
+				</section>
 			</main>
 		</div>
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- Font Awesome 5 Icons -->
 		<script src="https://kit.fontawesome.com/78cafd53fa.js" crossorigin="anonymous"></script>
+		<!-- Animation js -->
+		<script src="dist/js/animate.js"></script>
 	</body>
 </html>
