@@ -59,7 +59,6 @@ img {
 	font-size: 16px;
 	font-weight: 600;
 }
-
 h4 {
 	font-weight: 500;
 }
@@ -75,6 +74,29 @@ mark {
 	font-weight: 500;
 }
 
+/* Links styling */
+.link {
+	display: inline-block;
+	position: relative;
+	transition: transform 0.2s;
+	color: var(--black-clr);
+}
+.link::after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 5%;
+	transition: all 0.35s ease;
+	width: 30%;
+	opacity: 0.7;
+	height: 1px;
+	background-color: var(--primary-clr);
+}
+.link:hover::after {
+	left: 0%;
+	width: 90%;
+	opacity: 1;
+}
 /* Blocks */
 
 /* Main & Aside Wrappers*/
@@ -275,5 +297,13 @@ mark {
 }
 .work__tecnologies {
 	font-weight: 300;
+}
+
+.aspect-link {
+	color: var(--primary-clr);
 	font-style: italic;
+}
+
+.aspect-link::after {
+	bottom: 1px;
 }
