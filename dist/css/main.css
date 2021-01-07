@@ -32,6 +32,7 @@ img {
 
 /* Classes */
 .container {
+	overflow-x: hidden;
 	display: flex;
 	flex-wrap: wrap;
 
