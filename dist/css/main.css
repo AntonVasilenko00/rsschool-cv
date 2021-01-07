@@ -97,6 +97,19 @@ mark {
 	width: 90%;
 	opacity: 1;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	::i-block-chrome,
+	.link::after {
+		content: "";
+		position: absolute;
+		top: -80px;
+		left: 50%;
+		width: 1px;
+		height: 23px;
+		background: #616161;
+	}
+}
 /* Blocks */
 
 /* Main & Aside Wrappers*/
@@ -256,6 +269,7 @@ mark {
 
 		border-radius: 10px 10px 0 0;
 		background: rgba(44, 62, 80, 0.42);
+		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
 	}
 	.intro::after {
