@@ -23,8 +23,8 @@ I am a self-motivated person, with a great passion of studying web technologies.
   * Practiced: *Relative units*, *Media quires*, *Simple js sliders*, *Custom checkboxes*, *SASS*
 * [Thrivetalk landing](https://antonvasilenko00.github.io/Thrivetalk-landing-page/)
   * Practiced: *BEM Naming*, *Flexbox*, *Responsiveness*, *SASS*
-* [Creative-Digital-Agencies landing](https://antonvasilenko00.github.io/Creative-Digital-Agencies/)
-  * Practiced: *HTML5*, *CSS3*
+* [Hunger Website](https://antonvasilenko00.github.io/Hunger/)
+  * Practiced: *Grid*, *BEM*, *Responsiveness*
   
 ## Education
 2019-2023 Belarusian State University Of Informatics and
