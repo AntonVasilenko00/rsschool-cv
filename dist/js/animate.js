@@ -1,4 +1,3 @@
-$(document).scrollTop(0);
 function animate(className, addClassName) {
   var elements;
   var windowHeight;
